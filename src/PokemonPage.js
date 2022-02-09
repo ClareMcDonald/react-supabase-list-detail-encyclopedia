@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getPokemon } from './fetch-utils';
+import PokemonList from './PokemonList';
 
 export default function PokemonPage() {
   const [pokemon, setPokemon] = useState([]);
@@ -23,7 +24,7 @@ export default function PokemonPage() {
     <>
       <button>Previous</button>
       <button>Next</button>
-      <PokemonList />
+      <PokemonList pokemon={pokemon}/>
     </>
   );
 }
