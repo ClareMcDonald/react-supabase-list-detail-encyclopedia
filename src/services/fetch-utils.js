@@ -9,3 +9,13 @@ export async function getPokemon(from = 0, to = 20) {
   return checkError(response);
 
 }
+
+export async function getSinglePokemon(id) {
+  const resonse = await client
+    .from('pokemon_two')
+    .select()
+    .match({ id })
+    .single();
+    
+  return checkError(response);
+}
