@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getPokemon } from './fetch-utils';
+import { getPokemon } from './services/fetch-utils.js';
 import PokemonList from './PokemonList';
 
 export default function PokemonPage() {
@@ -22,8 +22,8 @@ export default function PokemonPage() {
     
   return (
     <>
-      <button>Previous</button>
-      <button>Next</button>
+      <button onClick={() => setPage(page - 1)} disabled={page === 1}>Previous Page</button>
+      <button onClick={() => setPage(page + 1)}>Next Page</button>
       <PokemonList pokemon={pokemon}/>
     </>
   );
