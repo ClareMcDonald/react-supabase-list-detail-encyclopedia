@@ -5,13 +5,13 @@ export async function getPokemon(from = 0, to = 20) {
     .from('pokemon_two')
     .select()
     .range(from, to);
-  console.log(response);
+
   return checkError(response);
 
 }
 
 export async function getSinglePokemon(id) {
-  const resonse = await client
+  const response = await client
     .from('pokemon_two')
     .select()
     .match({ id })
