@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  width: 250px;
+}
+
+.poke {
+  text-transform: capitalize;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
