@@ -45,3 +45,12 @@ img {
   text-transform: capitalize;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+.pokemon-detail {
+  text-transform: capitalize;
+  background-color: rgb(78, 168, 78);
+  margin: 20px;
+  padding: 20px;
+  border: solid 15px green;
+  border-radius: 10px;
+}
